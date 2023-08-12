@@ -1,7 +1,19 @@
 .header {
   width: 100%;
   height: 480px;
-  background: #361c7a;
+  background-image: url("../../../public/nosotros/breasNosotros.jpeg");
+  background-position: 50% 92%;
+  background-repeat: no-repeat;
+  padding-block-start: 348px;
+  padding-inline-start: 208px;
+}
+.header h1 {
+  color: #361c7a;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 .main p {
   font-weight: 300;
@@ -13,4 +25,132 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texto,
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline-start: 208px;
+}
+
+.texto {
+  width: 980px;
+  height: auto;
+  padding-block-start: 60px;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.texto p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.links {
+  width: 600px;
+  justify-content: space-between;
+  margin-block-start: 44px;
+  margin-block-end: 96px;
+}
+
+.links a {
+  color: #361c7a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.links a::before {
+  content: "";
+  width: 23px;
+  height: 7px;
+  background: #361c7a;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+@media screen and (max-width: 1440px) {
+  .texto,
+  .links {
+    margin-inline-start: 152px;
+  }
+
+  .header {
+    padding-inline-start: 152px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .texto,
+  .links {
+    margin-inline: 122px;
+  }
+
+  .header {
+    padding-inline-start: 122px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .texto {
+    margin-inline: 84px;
+  }
+  .links {
+    width: 600px;
+    justify-content: space-between;
+    margin-inline: 84px;
+  }
+  .header {
+    padding-inline-start: 84px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .texto {
+    width: 860px;
+    margin-inline: 80px;
+    row-gap: 30px;
+  }
+  .links {
+    width: 600px;
+    justify-content: space-between;
+    margin-inline: 80px;
+    row-gap: 28px;
+  }
+  .header {
+    padding-inline-start: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .texto,
+  .links {
+    margin-inline: 50px;
+  }
+  .header {
+    padding-inline-start: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .texto,
+  .links {
+    margin-inline: 20px;
+  }
+  .header {
+    padding-inline-start: 20px;
+  }
 }
