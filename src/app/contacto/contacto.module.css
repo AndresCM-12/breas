@@ -14,3 +14,119 @@
   font-weight: 300;
   line-height: normal;
 }
+
+
+.header {
+  width: 100%;
+  height: 480px;
+  background-image: url("../../../public/contact/contactImage.jpeg");
+  background-position: 50% 48%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main p {
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.main {
+  display: flex;
+}
+.left {
+  width: 60%;
+  height: 800px;
+  padding-block-start: 280px;
+  position: relative;
+}
+
+.right {
+  width: 40%;
+  height: 800px;
+  padding-block-start: 32px;
+}
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  padding-block-start: 20px;
+}
+.form form {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+}
+.form form input,
+.form form textarea {
+  width: 383px;
+  height: 32px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+  padding-inline-start: 10px;
+  color: #8f8f8f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  background: #f0f0f0;
+}
+
+.form form textarea {
+  height: 138px;
+  resize: none;
+  padding-block-start: 4px;
+}
+
+.send {
+  display: flex;
+  justify-content: flex-end;
+}
+.send button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-inline-end: 30px;
+  padding-block-start: 48px;
+  row-gap: 20px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: -560px;
+}
+
+.image {
+  width: 693px;
+  height: 258px;
+  background-image: url("../../../public/contact/contactImage.jpeg");
+  background-position: 50% 45%;
+  background-size: cover;
+}
+
+.direccion{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 17px;
+}
+.text p svg{
+  margin-inline-start: 16px;
+}
