@@ -1,8 +1,33 @@
 .header {
   width: 100%;
-  height: 480px;
+  height: 883px;
   background: #361c7a;
+  position: relative;
+  display: grid;
+  place-items: center flex-start;
 }
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.header h1 {
+  color: #fff;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+  text-transform: uppercase;
+  margin-left: 160px;
+}
+
+/* productsSection */
 .main p {
   font-weight: 300;
   line-height: normal;
@@ -14,3 +39,207 @@
   font-weight: 300;
   line-height: normal;
 }
+.main .product {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 869px;
+  height: 869px;
+  position: relative;
+}
+.main .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .product .floatingText {
+  padding: 34px 62px;
+  background-color: #e8a71f;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(0%, -50%);
+}
+
+.main .product.inverted .floatingText {
+  padding: 34px 62px;
+  background-color: #361c7a;
+  top: 50%;
+  left: 23%;
+  transform: translate(0%, -50%);
+  text-align: right;
+  width: fit-content;
+}
+.main .product h2 {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  position: relative;
+}
+.main .product h2::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 7px;
+  background-color: #fff;
+  bottom: -6px;
+  left: 0;
+}
+.main .product.inverted h2 {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  position: relative;
+  text-align: right;
+}
+.main .product h2.black::before {
+  background-color: #000;
+}
+.main .product.inverted h2::after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 7px;
+  background-color: #fff;
+  bottom: -6px;
+  right: 0;
+}
+.main .product h2.black::after {
+  background-color: #000;
+}
+.main .product.inverted h2::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background-color: #fff;
+  bottom: -6px;
+  left: 0;
+}
+.main .product.inverted p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 582px;
+  text-align: right;
+  width: 100vw;
+}
+.main .product p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 582px;
+}
+
+/* productsSection */
+
+/* moreProductsSection */
+.moreProducts {
+  background-color: #f2f2f2;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+.moreProducts h1 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* moreProductsSection */
+
+/* links section */ 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-block: 110px;
+  column-gap: 80px;
+  row-gap: 20px;
+}
+.links a {
+  color: #361c7a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+}
+.links a::before {
+  content: "";
+  width: 23px;
+  height: 7px;
+  background: #361c7a;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+/* links section */
+
+/* catalogSection */
+.catalog {
+  width: 100%;
+  height: 666px;
+  position: relative;
+  display: grid;
+  place-items: center flex-start;
+}
+.catalog img {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.catalog div {
+  z-index: 1;
+  margin-left: 170px;
+}
+.catalog h1 {
+  color: #fff;
+  max-width: 346px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.catalog p {
+  z-index: 1;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+}
+.catalog p::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 7px;
+  background-color: #361c7a;
+  bottom: -8px;
+  left: 0;
+}
+/* catalogSection */
