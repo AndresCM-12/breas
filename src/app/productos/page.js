@@ -29,16 +29,17 @@ export default function Home() {
           </div>
         </div>
         <div className={`${styles.product} ${styles.inverted}`}>
-          <div></div>
+          <article>
+            <div className={styles.floatingTextInverted}>
+              <h2>Shampoo Matizador</h2>
+              <p>
+                Shampo Matizador color violeta neutraliza los tonos amarillos,
+                ideal para cabellos decolorados, canosos y rubios claros. Evita
+                la oxidación de tu cabello.
+              </p>
+            </div>
+          </article>
           <Image src={shampooImg} alt="product" />
-          <div className={styles.floatingText}>
-            <h2>Shampoo Matizador</h2>
-            <p>
-              Shampo Matizador color violeta neutraliza los tonos amarillos,
-              ideal para cabellos decolorados, canosos y rubios claros. Evita la
-              oxidación de tu cabello.
-            </p>
-          </div>
         </div>
         <div className={styles.product}>
           <Image src={tcorteImg} alt="product" />
@@ -58,21 +59,22 @@ export default function Home() {
           </div>
         </div>
         <div className={`${styles.product} ${styles.inverted}`}>
-          <div></div>
+          <article>
+            <div
+              style={{ backgroundColor: "#F2F2F2" }}
+              className={styles.floatingTextInverted}
+            >
+              <h2 className={styles.black} style={{ color: "#000000" }}>
+                Tijera de Entresacar.
+              </h2>
+              <p style={{ color: "#000000" }}>
+                Tijera de entresacar de 6 pulgadas, descarga el volumen sin
+                perder el largo del cabello ideales para texturizar y lograr
+                diferentes estilos. Diseño ergonómico y ligero.
+              </p>
+            </div>
+          </article>
           <Image src={tEntresacarImg} alt="product" />
-          <div
-            className={styles.floatingText}
-            style={{ backgroundColor: "#F2F2F2;" }}
-          >
-            <h2 className={styles.black} style={{ color: "#000000" }}>
-              Tijera de Entresacar.
-            </h2>
-            <p style={{ color: "#000000" }}>
-              Tijera de entresacar de 6 pulgadas, descarga el volumen sin perder
-              el largo del cabello ideales para texturizar y lograr diferentes
-              estilos. Diseño ergonómico y ligero.
-            </p>
-          </div>
         </div>
         <div className={styles.product}>
           <Image src={capaImg} alt="product" />
@@ -95,14 +97,14 @@ export default function Home() {
         <h1>proxímamente más productos</h1>
       </section>
       <section className={styles.links}>
-        <a href="#">Quiero ser distribuidor </a>
-        <a href="#">Quiero vender Breas en mi salón</a>
+        <a href="/contacto">Quiero ser distribuidor </a>
+        <a href="/contacto">Quiero vender Breas en mi salón</a>
       </section>
       <section className={styles.catalog}>
         <div>
           <h1>Descarga nuesto catÁlogo digital</h1>
           <p>
-            <a href="">DescARGAR CATÁLOGO</a>
+            <a href="./Breas_catálogo.pdf" download>DescARGAR CATÁLOGO</a>
           </p>
         </div>
         <Image src={catalogImg} alt="catalog" />

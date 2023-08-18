@@ -238,3 +238,115 @@
   left: 0;
 }
 /* links section */
+
+@media screen and (max-width: 1550px) {
+  .homeBanner .primaryContainer {
+    left: 20px;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .homeProducts .products img {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .homeProducts .products img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .homeProducts .products img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .homeProducts p {
+    max-width: 600px;
+  }
+  .homeProducts .products img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .homeProducts p {
+    max-width: 400px;
+  }
+  .contact p {
+    max-width: 400px;
+  }
+  .homeProducts .products .product:nth-child(2) {
+    margin-inline: -115px;
+  }
+  .homeProducts .products img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .homeProducts p {
+    max-width: 300px;
+  }
+  .contact p {
+    max-width: 300px;
+  }
+  .homeProducts .products .product:nth-child(2) {
+    margin-inline: -115px;
+  }
+  .homeProducts .products img {
+    width: 180px;
+    height: 180px;
+  }
+  section.catalog div{
+    margin-left: 20px !important;
+  }
+}
+@media screen and (max-width: 510px) {
+  .homeProducts .products img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .homeProducts .products img {
+    width: 300px;
+    height: 300px;
+  }
+  .homeProducts .products {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeProducts .products .product:nth-child(2) {
+    margin-inline: 0px;
+    margin-bottom: 50px;
+  }
+  .homeProducts .products .product:nth-child(1) {
+    margin-bottom: 50px;
+  }
+  .homeBanner .primaryContainer a {
+    margin-top: 60px;
+  }
+  .homeProducts h2 {
+    max-width: 300px;
+  }
+  .links a::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .homeBanner .primaryContainer {
+    padding-inline: 20px;
+  }
+  .homeBanner .primaryContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .homeBanner .primaryContainer {
+    left: 20px;
+  }
+}

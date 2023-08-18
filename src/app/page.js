@@ -7,6 +7,7 @@ import contactoImg from "../../public/inicio/conocenos.png";
 import tijerasImg from "../../public/inicio/tijeras.png";
 import shampooImg from "../../public/inicio/shampoo.png";
 import coverImg from "../../public/inicio/cover.png";
+import Form from "./components/form/Form";
 
 export default function Home() {
   return (
@@ -67,9 +68,11 @@ export default function Home() {
       </section>
 
       <section className={styles.links}>
-        <a href="#">Quiero ser distribuidor </a>
-        <a href="#">Quiero vender Breas en mi salón</a>
+        <a href="/contacto">Quiero ser distribuidor </a>
+        <a href="/contacto">Quiero vender Breas en mi salón</a>
       </section>
+
+      <Form showImg={true} />
     </main>
   );
 }

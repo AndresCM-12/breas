@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <section className={styles.header}></section>
-      <Form showImg={true} />
+      <Form showImg={false} />
     </>
   );
 }

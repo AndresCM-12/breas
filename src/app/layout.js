@@ -1,6 +1,5 @@
 import "./globals.css";
 import localFont from "@next/font/local";
-import { useClient } from "react";
 import Header from "./components/Header";
 
 export const metadata = {
@@ -162,13 +161,13 @@ function Footer() {
             <p>NAV.</p>
           </li>
           <li>
-            <a href="#">PRODUCTOS</a>
+            <a href="/productos">PRODUCTOS</a>
           </li>
           <li>
-            <a href="#">NOSOTROS</a>
+            <a href="/nosotros">NOSOTROS</a>
           </li>
           <li>
-            <a href="#">CONTACTO</a>
+            <a href="/contacto">CONTACTO</a>
           </li>
         </ul>
         <ul>
@@ -176,10 +175,10 @@ function Footer() {
             <p>CONTACTO</p>
           </li>
           <li>
-            <a href="#">(614)123456</a>
+            <a href="https://wa.me/52614123456">(614)123456</a>
           </li>
           <li>
-            <a href="#">contacto@breas.com</a>
+            <a href="mailto:contacto@breas.com">contacto@breas.com</a>
           </li>
         </ul>
       </div>

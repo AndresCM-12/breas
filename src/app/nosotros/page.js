@@ -27,8 +27,8 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.links}>
-          <a href="">Quiero ser distribuidor </a>
-          <a href="">Quiero vender Breas en mi salón</a>
+          <a href="/contacto">Quiero ser distribuidor </a>
+          <a href="/contacto">Quiero vender Breas en mi salón</a>
         </div>
       </section>
     </>

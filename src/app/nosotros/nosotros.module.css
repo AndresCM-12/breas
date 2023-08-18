@@ -1,11 +1,12 @@
 .header {
   width: 100%;
   height: 480px;
-  background-image: url("../../../public/nosotros/breasNosotros.jpeg");
+  background-image: url("../../../public/nosotros/breasNosotros.png");
   background-position: 50% 92%;
   background-repeat: no-repeat;
   padding-block-start: 348px;
   padding-inline-start: 208px;
+  filter: brightness(0.7);
 }
 .header h1 {
   color: #361c7a;

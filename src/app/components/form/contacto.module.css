@@ -1,17 +1,18 @@
 .main {
+  width: 100%;
   display: flex;
 }
 .left {
-  width: 1080px;
+  width: 55%;
   height: 800px;
   padding-block-start: 280px;
   position: relative;
 }
 
 .right {
-  width: 42%;
+  width: 45%;
   height: 800px;
-  padding-block-start: 32px;
+  padding-block-start: 48px;
 }
 
 .form,
@@ -25,12 +26,18 @@
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 23px;
 }
-.send button h1 {
+.send button h3 {
   color: #000;
   font-size: 15px;
   font-weight: 400;
   line-height: normal;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.send button svg {
+  cursor: pointer;
 }
 .form {
   align-content: center;
@@ -44,10 +51,9 @@
 .form form input,
 .form form textarea {
   width: 383px;
-  height: 32px;
   border: none;
   border-radius: 16px;
-  padding-inline-start: 10px;
+  padding-inline-start: 20px;
   color: #8f8f8f;
   font-size: 16px;
   font-style: normal;
@@ -55,12 +61,13 @@
   line-height: normal;
   outline: none;
   background: #f0f0f0;
+  padding-block: 8px;
 }
 
 .form form textarea {
   height: 138px;
   resize: none;
-  padding-block-start: 4px;
+  padding-block: 8px;
 }
 
 .send {
@@ -94,7 +101,7 @@
 .image {
   width: 693px;
   height: 258px;
-  background-image: url("../../../../public/contact/contactImage.jpeg");
+  background-image: url("../../../../public/contact/contactImage.png");
   background-position: 50% 45%;
   background-size: cover;
 }
@@ -198,7 +205,7 @@
 }
 
 @media screen and (max-width: 830px) {
-  .left{
+  .left {
     align-items: center;
   }
   .info {
@@ -217,7 +224,7 @@
   .info {
     width: 444px;
   }
-  .text{
+  .text {
     justify-content: flex-end;
     padding-inline: 0px;
   }
@@ -233,19 +240,21 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .image,.text {
+  .image,
+  .text {
     width: 350px;
   }
   .form form input,
   .form form textarea {
     width: 350px;
   }
-  .info{
+  .info {
     align-items: center;
   }
 }
 @media screen and (max-width: 360px) {
-  .image,.text {
+  .image,
+  .text {
     width: 300px;
   }
   .form form input,
