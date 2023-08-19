@@ -1,35 +1,66 @@
+"use client";
 import styles from "./nosotros.module.css";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Home() {
   return (
     <>
       <section className={styles.header}>
-        <h1>Nosotros</h1>
+        <motion.h1
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          Nosotros
+        </motion.h1>
       </section>
       <section className={styles.main}>
-      <div className={styles.texto}>
-          <p>
+        <div className={styles.texto}>
+          <motion.p
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             En Breas somos una empresa comprometidos con la innovación de
             productos para el cuidado y belleza del cabello, seleccionamos los
             mejores ingredientes para satisfacer las necesidades actuales de tu
             estilo de vida actual.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             Estamos comprometidos con el trabajo profesional de los estilistas
             contamos con líneas especializadas para cuidar y mantener su trabajo
             y lograr una satisfacción total en sus clientes e impulsar al máximo
             su creatividad.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             Nuestra visión es estar constantemente innovando buscando nuevas
             tecnologías para el cuidado del cabello con productos vanguardistas,
             ingredientes naturales y siendo responsables con el medio ambiente.
-          </p>
+          </motion.p>
         </div>
-        <div className={styles.links}>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          className={styles.links}
+        >
           <a href="/contacto">Quiero ser distribuidor </a>
           <a href="/contacto">Quiero vender Breas en mi salón</a>
-        </div>
+        </motion.div>
       </section>
     </>
   );

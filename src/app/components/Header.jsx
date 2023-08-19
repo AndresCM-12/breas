@@ -16,6 +16,10 @@ export default function Header() {
   return (
     <>
       <motion.header
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
         style={{
           paddingBlock: menuScrolling ? "20px" : "72px",
           backgroundColor: menuScrolling ? "#fff" : "transparent",
@@ -266,7 +270,7 @@ export default function Header() {
         </div>
       </motion.header>
 
-      <div
+      <motion.div
         onClick={() => setShowMobileMenu(!showMobileMenu)}
         className="mobileMenu"
         style={{
@@ -289,7 +293,7 @@ export default function Header() {
             </li>
           </ul>
         </section>
-      </div>
+      </motion.div>
     </>
   );
 }

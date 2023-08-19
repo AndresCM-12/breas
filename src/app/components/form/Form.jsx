@@ -2,17 +2,40 @@
 import Image from "next/image";
 import styles from "./contacto.module.css";
 import imgMap from "../../../../public/contact/map.png";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Form({ showImg }) {
   return (
     <section className={styles.main}>
-      <div className={styles.left}>
+      <motion.div
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
+        className={styles.left}
+      >
         <div className={styles.form}>
           <h1>Contactanos</h1>
           <form action="https://formsubmit.co/contacto@breas.com" method="POST">
-            <input type="text" placeholder="Nombre" name="Nombre" required></input>
-            <input type="email" placeholder="Correo" name="Correo" required></input>
-            <input type="text" placeholder="Asunto" name="Asunto" required></input>
+            <input
+              type="text"
+              placeholder="Nombre"
+              name="Nombre"
+              required
+            ></input>
+            <input
+              type="email"
+              placeholder="Correo"
+              name="Correo"
+              required
+            ></input>
+            <input
+              type="text"
+              placeholder="Asunto"
+              name="Asunto"
+              required
+            ></input>
             <textarea placeholder="Mensaje" name="Mensaje"></textarea>
             <div className={styles.send}>
               <button type="submit">
@@ -96,7 +119,7 @@ export default function Form({ showImg }) {
             className={styles.image}
           ></div>
         </div>
-      </div>
+      </motion.div>
       <div
         className={styles.right}
         style={{
