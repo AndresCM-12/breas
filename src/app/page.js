@@ -37,15 +37,7 @@ export default function Home() {
             para cabellos decolorados, canosos y rubios claros. Evita la
             oxidación de tu cabello.
           </motion.p>
-          <motion.a
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            initial={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            href="/productos"
-          >
-            CONOCE NUESTRO SHAMPOO
-          </motion.a>
+          <a href="/productos">CONOCE NUESTRO SHAMPOO</a>
         </div>
       </section>
 
@@ -65,13 +57,12 @@ export default function Home() {
             initial={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
           >
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident, similique sunt in culpa qui officia deserunt mollitia
-            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-            est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-            eligendi optio cumque nihil impedit quo
+            En breas estamos comprometidos con la creación de productos de
+            vanguardia para dar una solución integral a tu estilo y cuidado de
+            tu cabello, elaborados con la mejor selección de ingredientes
+            proporcionándote una garantía de calidad. Para nosotros es de suma
+            importancia el cuidado personal es por eso que nuestros productos
+            son de alta gama siendo recomendados por los mejores estilistas.
           </motion.p>
         </div>
         <div className={styles.products}>

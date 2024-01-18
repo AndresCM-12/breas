@@ -204,6 +204,13 @@ export default function Header() {
         </div>
         <div className="right">
           <svg
+            style={{
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              //navigate to facebook page
+              window.open("https://www.facebook.com/profile.php?id=100092164551114&mibextid=LQQJ4d", "_blank");
+            }}
             xmlns="http://www.w3.org/2000/svg"
             fill="#FFFFFF"
             width="16px"
@@ -216,36 +223,6 @@ export default function Header() {
               }}
               d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
             />
-          </svg>
-          <svg
-            style={{
-              color: menuScrolling ? "#361c7a" : "#fff",
-            }}
-            xmlns="http://www.w3.org/2000/svg"
-            width="16px"
-            height="16px"
-            viewBox="0 0 32 32"
-          >
-            <g>
-              <path
-                style={{
-                  fill: menuScrolling ? "#361c7a" : "#fff",
-                }}
-                d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z"
-              />
-              <path
-                style={{
-                  fill: menuScrolling ? "#361c7a" : "#fff",
-                }}
-                d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8   c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z"
-              />
-              <path
-                style={{
-                  fill: menuScrolling ? "#361c7a" : "#fff",
-                }}
-                d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8   c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z"
-              />
-            </g>
           </svg>
         </div>
         <div className="rightMobile">

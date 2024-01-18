@@ -28,6 +28,10 @@
   line-height: normal;
   margin-bottom: 23px;
 }
+.send button:hover h3 {
+  animation: marginRight 0.5s ease-in-out;
+  margin-right: 12px;
+}
 .send button h3 {
   color: #000;
   font-size: 15px;
@@ -111,8 +115,21 @@
   flex-wrap: wrap;
   column-gap: 17px;
 }
+.direccion p {
+  text-align: end;
+  font-size: 12px;
+}
 .text p svg {
   margin-inline-start: 16px;
+}
+
+@keyframes marginRight {
+  from {
+    margin-right: 8px;
+  }
+  to {
+    margin-right: 12px;
+  }
 }
 
 @media screen and (max-width: 1600px) {

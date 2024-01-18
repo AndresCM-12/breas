@@ -17,7 +17,7 @@ export default function Form({ showImg }) {
       >
         <div className={styles.form}>
           <h1>Contactanos</h1>
-          <form action="https://formsubmit.co/contacto@breas.com" method="POST">
+          <form action="https://formsubmit.co/breasmx@gmail.com" method="POST">
             <input
               type="text"
               placeholder="Nombre"
@@ -39,7 +39,7 @@ export default function Form({ showImg }) {
             <textarea placeholder="Mensaje" name="Mensaje"></textarea>
             <div className={styles.send}>
               <button type="submit">
-                <h3>Enviar</h3>{" "}
+                <h3>Enviar</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="8"
@@ -63,8 +63,8 @@ export default function Form({ showImg }) {
           <div className={styles.text}>
             <div className={styles.direccion}>
               <p>
-                Calle Séptima y Media 3214, Santa Rosa,<br></br>31050 Chihuahua,
-                Chih.
+                Av. Pascual Orozco N.1111 Fracc. Magisterial Universidad
+                <br></br>C.P.31200 Chihuahua, Chih
               </p>
               <svg
                 width="12"
@@ -81,7 +81,7 @@ export default function Form({ showImg }) {
             </div>
 
             <p>
-              (614)123-5660{" "}
+              (614) 503-2022
               <svg
                 width="17"
                 height="17"
@@ -96,7 +96,7 @@ export default function Form({ showImg }) {
               </svg>
             </p>
             <p>
-              contacto@breas.com{" "}
+              breasmx@gmail.com
               <svg
                 width="16"
                 height="12"
