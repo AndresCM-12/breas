@@ -6,17 +6,31 @@ import coverImg from "../../../public/productos/mainBanner.png";
 import acondicionadorImg from "../../../public/productos/acondicionador.png";
 import capaImg from "../../../public/productos/capa.png";
 import shampooImg from "../../../public/productos/shampoo.png";
+import shampoo1Img from "../../../public/productos/shampoo1.png";
 import tcorteImg from "../../../public/productos/tcorte.png";
+import tcorte1Img from "../../../public/productos/tcorte1.png";
+import tcorte2Img from "../../../public/productos/tcorte2.png";
 import tEntresacarImg from "../../../public/productos/tentresacar.png";
 import catalogImg from "../../../public/productos/catalogo.png";
 import shampooAraganImg from "../../../public/productos/shampooaragan.png";
+import shampooAragan1Img from "../../../public/productos/shampooaragan1.png";
+import shampooAragan2Img from "../../../public/productos/shampooaragan2.png";
+import shampooAragan3Img from "../../../public/productos/shampooaragan3.png";
 import trulyBiphaseImg from "../../../public/productos/trulybiphase.png";
+import trulyBiphase1Img from "../../../public/productos/trulybiphase1.png";
 import trulyBenefitsImg from "../../../public/productos/trulybenefits.png";
+import trulyBenefits1Img from "../../../public/productos/trulybenefits1.png";
 import trulyProtectingImg from "../../../public/productos/trulyprotecting.png";
+import trulyProtecting1Img from "../../../public/productos/trulyprotecting1.png";
 import ganPureoilImg from "../../../public/productos/granpureoil.png";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import { useState } from "react";
+import "swiper/css/navigation";
 export default function Home() {
   return (
     <>
@@ -33,7 +47,20 @@ export default function Home() {
       </section>
       <section className={styles.main}>
         <div className={styles.product}>
-          <Image src={acondicionadorImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={acondicionadorImg} alt="product" />
+            </SwiperSlide>
+          </Swiper>
           <motion.div
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -66,11 +93,48 @@ export default function Home() {
               </p>
             </motion.div>
           </article>
-          <Image src={shampooImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={shampooImg} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={shampoo1Img} alt="product" />
+            </SwiperSlide>
+          </Swiper>
         </div>
-
         <div className={styles.product}>
-          <Image src={shampooAraganImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={shampooAraganImg} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={shampooAragan1Img} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={shampooAragan2Img} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={shampooAragan3Img} alt="product" />
+            </SwiperSlide>
+          </Swiper>
           <motion.div
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -110,10 +174,42 @@ export default function Home() {
               </p>
             </motion.div>
           </article>
-          <Image src={trulyBiphaseImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={trulyBiphaseImg} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={trulyBiphase1Img} alt="product" />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className={styles.product}>
-          <Image src={trulyBenefitsImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={trulyBenefitsImg} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={trulyBenefits1Img} alt="product" />
+            </SwiperSlide>
+          </Swiper>
           <motion.div
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -150,7 +246,23 @@ export default function Home() {
               </p>
             </motion.div>
           </article>
-          <Image src={trulyProtectingImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={trulyProtectingImg} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={trulyProtecting1Img} alt="product" />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className={styles.product}>
           <Image src={ganPureoilImg} alt="product" />
@@ -172,7 +284,6 @@ export default function Home() {
             </p>
           </motion.div>
         </div>
-        
         <div className={`${styles.product} ${styles.inverted}`}>
           <article>
             <motion.div
@@ -196,7 +307,26 @@ export default function Home() {
           <Image src={tEntresacarImg} alt="product" />
         </div>
         <div className={styles.product}>
-          <Image src={tcorteImg} alt="product" />
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={0}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            speed={1000}
+            navigation={true}
+            modules={[Pagination, Navigation, Autoplay]}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <SwiperSlide>
+              <Image src={tcorteImg} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={tcorte1Img} alt="product" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={tcorte2Img} alt="product" />
+            </SwiperSlide>
+          </Swiper>
           <motion.div
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -225,18 +355,19 @@ export default function Home() {
               transition={{ duration: 1.5 }}
               style={{ backgroundColor: "#F2F2F2" }}
               className={styles.floatingTextInverted}
-              >
+            >
               <h2 className={styles.black} style={{ color: "#000000" }}>
                 Capa Impermeable.
               </h2>
               <p style={{ color: "#000000" }}>
-                Diseñada para uso en corte o tinte. Gracias a sus características
-                la hacen un producto útil para el trabajo diario del salón, es
-                resistente al agua, a manchas, antiestática ligera y suave.
+                Diseñada para uso en corte o tinte. Gracias a sus
+                características la hacen un producto útil para el trabajo diario
+                del salón, es resistente al agua, a manchas, antiestática ligera
+                y suave.
               </p>
             </motion.div>
           </article>
-            <Image src={capaImg} alt="product" />
+          <Image src={capaImg} alt="product" />
         </div>
       </section>
       <section className={styles.moreProducts}>

@@ -211,3 +211,14 @@ footer .right {
   align-items: center;
   column-gap: 20px;
 }
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 40px !important;
+  color: #361c7a !important;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 40px !important;
+  color: #361c7a !important;
+}
