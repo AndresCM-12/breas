@@ -9,6 +9,11 @@ import shampooImg from "../../../public/productos/shampoo.png";
 import tcorteImg from "../../../public/productos/tcorte.png";
 import tEntresacarImg from "../../../public/productos/tentresacar.png";
 import catalogImg from "../../../public/productos/catalogo.png";
+import shampooAraganImg from "../../../public/productos/shampooaragan.png";
+import trulyBiphaseImg from "../../../public/productos/trulybiphase.png";
+import trulyBenefitsImg from "../../../public/productos/trulybenefits.png";
+import trulyProtectingImg from "../../../public/productos/trulyprotecting.png";
+import ganPureoilImg from "../../../public/productos/granpureoil.png";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
@@ -63,27 +68,111 @@ export default function Home() {
           </article>
           <Image src={shampooImg} alt="product" />
         </div>
+
         <div className={styles.product}>
-          <Image src={tcorteImg} alt="product" />
+          <Image src={shampooAraganImg} alt="product" />
           <motion.div
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             initial={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
             className={styles.floatingText}
-            style={{ backgroundColor: "#F2F2F2;" }}
           >
-            <h2 className={styles.black} style={{ color: "#000000" }}>
-              Tijeras de Corte.
-            </h2>
-            <p style={{ color: "#000000" }}>
-              Tijeras de corte de cabello de uso profesional de 6 pulgadas
-              fabricadas en acero inoxidable, diseño ergonómico, ligeras y que
-              garantiza un corte perfecto ya que evita daños o quiebres. Esta
-              diseñada para cortes en cabellos húmedos o secos.
+            <h2>SHAMPOO Aceite de Argán</h2>
+            <p>
+              Shampoo de hidratación intensiva, dirigido para aquellos cabellos
+              secos, castigados y débiles. El argan oil shampoo tiene una
+              formula concentrada a base de aceite de argán y aguacate, ricos en
+              vitamina E y antioxidantes que gracias a ellos aportan brillo y
+              suavidad. Su función es limpiar e hidratar en profundidad para así
+              dar volumen, brillo, suavidad y elasticidad.
             </p>
           </motion.div>
         </div>
+        <div className={`${styles.product} ${styles.inverted}`}>
+          <article>
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              className={styles.floatingTextInverted}
+              style={{ backgroundColor: "#9F0E34;" }}
+            >
+              <h2>TRULY BIPHASE</h2>
+              <p>
+                Acondicionar capilar sin enjuague que hidrata y repara cabellos,
+                facilitando su peinado. Truly Biphase acondicionador instantáneo
+                está diseñado con siliconas cosméticas e ingredientes de
+                altísima calidad que lo convierten a una formula nutritiva y
+                ligera que no engrasa el cabello, también está diseñado para
+                todo tipo de cabellos.
+              </p>
+            </motion.div>
+          </article>
+          <Image src={trulyBiphaseImg} alt="product" />
+        </div>
+        <div className={styles.product}>
+          <Image src={trulyBenefitsImg} alt="product" />
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className={styles.floatingText}
+            style={{ backgroundColor: "#9F0E34;" }}
+          >
+            <h2>TRULY 10 BENEFITS</h2>
+            <p>
+              Excelente tratamiento en crema, ideal para todo tipo de cabello,
+              gracias a sus 10 beneficios, lo hace un tratamiento que consigue
+              un cabello sano desde su primera puesta
+            </p>
+          </motion.div>
+        </div>
+        <div className={`${styles.product} ${styles.inverted}`}>
+          <article>
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              className={styles.floatingTextInverted}
+              style={{ backgroundColor: "#9F0E34;" }}
+            >
+              <h2>TRULY PROTECTING HEAT</h2>
+              <p>
+                Spray protector de calor. El Truly Protecting Heat es un Serum
+                térmico que crea una capaprotectora en el cabello protegiendo
+                del calor de las secadoras y planchas. Es un producto que evita
+                que las puntas se abran, y es recomendado su uso antes del
+                secado y de cualquier técnica de alisado.
+              </p>
+            </motion.div>
+          </article>
+          <Image src={trulyProtectingImg} alt="product" />
+        </div>
+        <div className={styles.product}>
+          <Image src={ganPureoilImg} alt="product" />
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className={styles.floatingText}
+            style={{ backgroundColor: "#DC9C46;" }}
+          >
+            <h2>GAN PURE OIL</h2>
+            <p>
+              Un aceite que nos ayuda a hidratar, suavizar, y reparar cabellos,
+              sus ingredientes activos el Argan, el Abyssinian, el Aguacate, y
+              la Vitamina E, son ideales para lograr un brillo intenso a los
+              cabellos, a fortalecerlos y a dejarlos ligeros y suaves con una
+              textura de seda.
+            </p>
+          </motion.div>
+        </div>
+        
         <div className={`${styles.product} ${styles.inverted}`}>
           <article>
             <motion.div
@@ -107,24 +196,47 @@ export default function Home() {
           <Image src={tEntresacarImg} alt="product" />
         </div>
         <div className={styles.product}>
-          <Image src={capaImg} alt="product" />
+          <Image src={tcorteImg} alt="product" />
           <motion.div
-            style={{ backgroundColor: "#F2F2F2;" }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             initial={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
+            style={{ backgroundColor: "#F2F2F2" }}
             className={styles.floatingText}
           >
             <h2 className={styles.black} style={{ color: "#000000" }}>
-              Capa Impermeable.
+              Tijeras de Corte.
             </h2>
             <p style={{ color: "#000000" }}>
-              Diseñada para uso en corte o tinte. Gracias a sus características
-              la hacen un producto útil para el trabajo diario del salón, es
-              resistente al agua, a manchas, antiestática ligera y suave.
+              Tijeras de corte de cabello de uso profesional de 6 pulgadas
+              fabricadas en acero inoxidable, diseño ergonómico, ligeras y que
+              garantiza un corte perfecto ya que evita daños o quiebres. Esta
+              diseñada para cortes en cabellos húmedos o secos.
             </p>
           </motion.div>
+        </div>
+        <div className={`${styles.product} ${styles.inverted}`}>
+          <article>
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              style={{ backgroundColor: "#F2F2F2" }}
+              className={styles.floatingTextInverted}
+              >
+              <h2 className={styles.black} style={{ color: "#000000" }}>
+                Capa Impermeable.
+              </h2>
+              <p style={{ color: "#000000" }}>
+                Diseñada para uso en corte o tinte. Gracias a sus características
+                la hacen un producto útil para el trabajo diario del salón, es
+                resistente al agua, a manchas, antiestática ligera y suave.
+              </p>
+            </motion.div>
+          </article>
+            <Image src={capaImg} alt="product" />
         </div>
       </section>
       <section className={styles.moreProducts}>
