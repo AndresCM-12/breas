@@ -60,6 +60,9 @@ export default function Home() {
             <SwiperSlide>
               <Image src={acondicionadorImg} alt="product" />
             </SwiperSlide>
+            <SwiperSlide>
+              <Image src={shampooAragan2Img} alt="product" />
+            </SwiperSlide>
           </Swiper>
           <motion.div
             whileInView={{ opacity: 1 }}
@@ -127,9 +130,6 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <Image src={shampooAragan1Img} alt="product" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={shampooAragan2Img} alt="product" />
             </SwiperSlide>
             <SwiperSlide>
               <Image src={shampooAragan3Img} alt="product" />
