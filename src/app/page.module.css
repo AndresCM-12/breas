@@ -114,6 +114,7 @@
 .homeProducts .products img {
   width: 552px;
   height: 552px;
+  object-fit: cover;
 }
 .homeProducts .products .product a {
   margin-top: 60px;

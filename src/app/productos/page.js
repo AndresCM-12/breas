@@ -71,7 +71,7 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             className={styles.floatingText}
           >
-            <h2>Acondicionador Aceite de Argán</h2>
+            <h2>ARGAN OIL CONDITIONER</h2>
             <p>
               Reparador intensivo, aporta hidratación gracias a su componente
               activo de argán. Devuelve elasticidad y repara el cabello dañado
@@ -88,7 +88,7 @@ export default function Home() {
               transition={{ duration: 1.5 }}
               className={styles.floatingTextInverted}
             >
-              <h2>Shampoo Matizador</h2>
+              <h2>PLATINUM SHAMPOO</h2>
               <p>
                 Shampo Matizador color violeta neutraliza los tonos amarillos,
                 ideal para cabellos decolorados, canosos y rubios claros. Evita
@@ -142,7 +142,7 @@ export default function Home() {
             transition={{ duration: 1.5 }}
             className={styles.floatingText}
           >
-            <h2>SHAMPOO Aceite de Argán</h2>
+            <h2>ARGAN OIL SHAMPOO</h2>
             <p>
               Shampoo de hidratación intensiva, dirigido para aquellos cabellos
               secos, castigados y débiles. El argan oil shampoo tiene una
@@ -274,7 +274,7 @@ export default function Home() {
             className={styles.floatingText}
             style={{ backgroundColor: "#DC9C46;" }}
           >
-            <h2>GAN PURE OIL</h2>
+            <h2>ARGAN PURE OIL</h2>
             <p>
               Un aceite que nos ayuda a hidratar, suavizar, y reparar cabellos,
               sus ingredientes activos el Argan, el Abyssinian, el Aguacate, y

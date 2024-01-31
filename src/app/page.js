@@ -9,9 +9,9 @@ import thirdBanner from "../../public/inicio/thirdImage.png";
 import contactoImg from "../../public/inicio/conocenos.png";
 import coomingSoonImg from "../../public/inicio/coomingsoon.png";
 
-import tijerasImg from "../../public/inicio/tijeras.png";
+import tijerasImg from "../../public/productos/shampoo1.png";
 import shampooImg from "../../public/inicio/shampoo.png";
-import coverImg from "../../public/inicio/cover.png";
+import coverImg from "../../public/productos/shampooaragan1.png";
 import Form from "./components/form/Form";
 import { motion } from "framer-motion";
 
@@ -115,7 +115,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
           >
-            En breas estamos comprometidos con la creación de productos de
+            En Breas estamos comprometidos con la creación de productos de
             vanguardia para dar una solución integral a tu estilo y cuidado de
             tu cabello, elaborados con la mejor selección de ingredientes
             proporcionándote una garantía de calidad. Para nosotros es de suma
