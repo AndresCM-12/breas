@@ -23,7 +23,7 @@ import { useState } from "react";
 export default function Home() {
   var slides = [
     {
-      title: "Shampoo Matizador",
+      title: "PLATINUM SHAMPOO",
       text: "Shampo Matizador color violeta neutraliza los tonos amarillos, ideal para cabellos decolorados, canosos y rubios claros. Evita la oxidación de tu cabello.",
       cta: "CONOCE NUESTRO SHAMPOO",
       img: mainBanner,
