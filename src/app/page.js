@@ -74,7 +74,11 @@ export default function Home() {
         </Swiper>
         <motion.div
           className={styles.primaryContainer}
-          style={{ backgroundColor: slides[currentSlideIndex].bc, zIndex: 10, transition: "background-color 500ms ease" }}
+          style={{
+            backgroundColor: slides[currentSlideIndex].bc,
+            zIndex: 10,
+            transition: "background-color 500ms ease",
+          }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
@@ -181,25 +185,37 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.contactPlus}>
+        <h2>¿TE GUSTARÍA DISTRIBUIR BREAS?</h2>
+      </section>
+
       <section className={styles.links}>
-        <motion.a
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          href="/contacto"
-        >
-          Quiero ser distribuidor{" "}
-        </motion.a>
-        <motion.a
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          href="/contacto"
-        >
-          Quiero vender Breas en mi salón
-        </motion.a>
+        <div className={styles.linkWrapper} style={{
+          backgroundColor: "#A47829",
+        }}>
+          <motion.a
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            href="/contacto"
+          >
+            Quiero ser distribuidor{" "}
+          </motion.a>
+        </div>
+        <div className={styles.linkWrapper} style={{
+          backgroundColor: "#621322",
+        }}>
+          <motion.a
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            href="/contacto"
+          >
+            Quiero vender Breas en mi salón
+          </motion.a>
+        </div>
       </section>
 
       <Form showImg={true} />
